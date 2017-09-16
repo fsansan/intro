@@ -1,33 +1,92 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<manifest xmlns="http://schemas.microsoft.com/wlw/manifest/weblog">
-<options>
-<clientType>WordPress</clientType>
-<supportsKeywords>Yes</supportsKeywords>
-<supportsGetTags>Yes</supportsGetTags>
-</options>
-<weblog>
-<serviceName>WordPress</serviceName>
-<imageUrl>images/wlw/wp-icon.png</imageUrl>
-<watermarkImageUrl>images/wlw/wp-watermark.png</watermarkImageUrl>
-<homepageLinkText>View site</homepageLinkText>
-<adminLinkText>Dashboard</adminLinkText>
-<adminUrl>
-<![CDATA[ {blog-postapi-url}/../wp-admin/ ]]>
-</adminUrl>
-<postEditingUrl>
-<![CDATA[
-{blog-postapi-url}/../wp-admin/post.php?action=edit&post={post-id}
-]]>
-</postEditingUrl>
-</weblog>
-<buttons>
-<button>
-<id>0</id>
-<text>Manage Comments</text>
-<imageUrl>images/wlw/wp-comments.png</imageUrl>
-<clickUrl>
-<![CDATA[ {blog-postapi-url}/../wp-admin/edit-comments.php ]]>
-</clickUrl>
-</button>
-</buttons>
-</manifest>
+
+<!DOCTYPE html>
+<head>
+	<title>HKU Vision Group</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="https://apps.bdimg.com/libs/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript">
+		onload = function(){
+   			document.getElementById("lastModified").innerHTML = "Last Update: " + document.lastModified.split(" ")[0];
+		}
+	</script>
+</head>
+<body>
+	<div class="main-container">
+		<nav class="main-nav">
+			<div id="logo" class="left"><a href="index.html">HKU Vision Group</a></div>
+			<ul class="nav right center-text">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li ><a href="people.html">People</a></li>
+				<li ><a href="publications.html">Publications</a></li>
+				<li ><a href="projects.html">Projects</a></li>
+				<li ><a href="teaching.html">Teaching</a></li>
+			</ul>
+		</nav>
+		<div class="content-container">
+			<h1 class="left-text">About Us</h1>
+			<img src="images/background.jpg" width="400" class="right shadow">
+			<p class="left-text">Computer Vision Group (CVG) is a research group under <a href="http://www.cs.hku.hk/">the Department of Computer Science, The University of Hong Kong</a>. CVG is engaged in two branches of computer vision: scene reconstruction and machine vision.
+			<p>In scene reconstruction, we mainly focus on computing a 3D model of the scene. Topics includes Camera calibration, 3D model reconstruction etc.</p>
+			<p>In machine vision, we aim to develop algorithms based on neural networks and deep learning to solve high level vision problems, such as scene text recognition, face sketch synthesis, semantic matching, lip reading, image retrieval, optical flow etc.</p>
+			CVG closely collaborates with <a href="http://www.cs.hku.hk/GraphicsGroup/">Computer Graphics Group, CS, HKU</a>.
+			<a href="https://github.com/HKU-Vision-Group"><i class="fa fa-3x fa-github" style="color:black;"></i></a>
+			<a href="mailto:vislab@cs.hku.hk"><i class="fa fa-3x fa-envelope"  style="color:black;"></i></a><br>
+		</div>
+		<hr class="gradient">
+		<div class="content-container">
+			<h1 class="left-text" style="color:red;">News and Events</h1>
+			<div class="newsitem">
+				<div class="newshead">new</div>
+				<div class="newsdate">July 2017</div>
+				<div class="newstext">'SCNet: Learning Semantic Correspondence' paper has been accepted in ICCV 2017.</div>
+			</div>
+			<h2>Recent Publications</h2>
+			<div class="paper">
+				<div class="ptitle">SCNet: Learning Semantic Correspondence.</div>
+				<div class="pauthors">K. Han, R. Rezende, B. Ham, K.-Y. K. Wong, M. Cho, C. Schmid, J. Ponce</div>
+				<div class="pvenue">ICCV2017</div>
+				<div class="plinks"><a href="https://arxiv.org/abs/1705.04043">[PDF]</a></div>
+			</div>
+			<div class="paper">
+				<div class="ptitle">Single View 3D Reconstruction under an Uncalibrated Camera and an Unknown Mirror Sphere.</div>
+				<div class="pauthors">K. Han, K.-Y. K. Wong and X. Tan</div>
+				<div class="pvenue">3DV2016</div>
+				<div class="plinks"><a href="publications/khan_3dv16.pdf">[PDF]</a></div>
+			</div>
+			<div class="paper">
+				<div class="ptitle">STAR-Net: A SpaTial Attention Residue Network for Scene Text Recognition.</div>
+				<div class="pauthors">W. Liu, C. Chen, K.-Y. K. Wong, Z. Su and J. Han</div>
+				<div class="pvenue">BMVC2016</div>
+				<div class="plinks"><a href="publications/wliu_bmvc16.pdf">[PDF]</a></div>
+			</div>
+			<div class="paper">
+				<div class="ptitle">Mirror Surface Reconstruction under an Uncalibrated Camera.</div>
+				<div class="pauthors">K. Han, K.-Y. K. Wong, D. Schnieders and M. Liu. </div>
+				<div class="pvenue">CVPR2016</div>
+				<div class="plinks"><a href="publications/khan_cvpr16.pdf">[PDF]</a></div>
+			</div>
+
+		</div>
+		<hr class="gradient">
+		<div class="content-container">
+			<h1 class="left-text">Contact</h1>
+			<i class="fa fa-lg fa-phone"></i>(852) 28578450<br>
+			<i class="fa fa-envelope"></i> vislab [at] cs [dot] hku [dot] hk <br>
+			<i class="fa fa-lg fa-map-marker"></i> CB411, Chow Yei Ching Building, The University of Hong Kong, Pokfulam Road, Hong Kong.<br>
+		</div>
+
+		<footer>
+			<p>Copyright &copy; 2017 HKU Vision Group, Chen Chaofeng. </p>
+			<p id="lastModified" class="right"></p>
+		</footer>
+	</div>
+</html>
